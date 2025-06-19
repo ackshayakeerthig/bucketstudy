@@ -103,20 +103,29 @@ Steps:
 ## Project structure
 ```pgsql
 bucketstudy/
-├── docker-compose.yml
-├── Dockerfile
+├── .vscode/
+├── controllers/
+│   └── authController.js
+├── db/
+│   └── db.js
 ├── docker-mysql-init/
 │   └── full_dump.sql
+├── middleware/
+│   └── authMiddleware.js
+├── node_modules/         ← auto-generated (not pushed to GitHub)
 ├── postman/
 │   └── bucketstudy.postman_collection.json
-├── src/
-│   ├── controllers/
-│   ├── routes/
-│   ├── db/
-│   └── server.js
-├── package.json
+├── routes/
+│   └── authRoutes.js
+├── .dockerignore
+├── .gitattributes
 ├── .gitignore
-└── README.md
+├── docker-compose.development.yml
+├── docker-compose.yml
+├── Dockerfile
+├── package-lock.json
+├── package.json
+└── server.js
 ```
 ## Authors
 
